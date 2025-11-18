@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mappa Meteorologia</title>
+
+  <!-- stile leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
+  <!-- script leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- nostro stile -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <div id="app">
+
+    <div id="controls" class="toolbar">
+      <button id="toggle-placing-btn">Disable Marker Placement</button>
+      <button id="clear-database-btn">Clear Database</button>
+    </div>
+
+    <div class="map-row">
+      <div id="map"></div>
+
+      <div id="side-panel">
+        <h3>Markers</h3>
+        <ul id="marker-list"></ul>
+      </div>
+    </div>
+
+    <div id="stats">
+      <div class="stat-card">
+        <div class="label">Totale punti</div>
+        <div id="total-markers" class="value">0</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Temperatura media</div>
+        <div id="average-temperature" class="value">—</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Temperatura massima</div>
+        <div id="highest-temperature" class="value">—</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="label">Temperatura minima</div>
+        <div id="lowest-temperature" class="value">—</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

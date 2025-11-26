@@ -24,6 +24,7 @@ Un'applicazione web interattiva che permette di cliccare su una mappa geografica
 * **PocketBase** - Backend e database realtime.
 * **Open-Meteo API** - Dati meteorologici.
 * **Nominatim API** - Geocoding inverso (da coordinate a indirizzo).
+* Dati geografici © OpenStreetMap contributors
 
 ## ⚙️ Installazione e Configurazione
 
